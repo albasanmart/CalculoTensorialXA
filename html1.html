@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="author" content="Made with ❤ by Alba - @csslab">
+  <link rel="stylesheet" href="css1.css">
+
+  <title>jQuery Timeline 0.9.54 - Dando vida al tiempo</title>
+  <link rel="stylesheet" href="../styles-folder/css1.css" media="screen" />
+  <script src="scripts-folder/jss1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="js/jquery.timelinr-0.9.54.js"></script>
+  <script>
+    $(function(){
+    			$().timelinr({
+    				arrowKeys: 'true'
+    			})
+    		});
+  </script>
+</head>
+
+<body>
+
+  <div id="timeline">
+    <ul id="dates">
+      <li><a href="#1984">1984</a></li>
+      <li><a href="#1991">1991</a></li>
+      <li><a href="#Tensores">Tensores</a></li>
+      <li><a href="#Vectores">Vectores</a></li>
+
+    </ul>
+    <ul id="issues">
+      <li id="1984">
+
+        <h1>1984</h1>
+        <p>Woldemart Voigt</p>
+        <br>
+        <p>Físico alemán, que fue la primera persona en utilizar los tensores.
+        </p>
+        <p>Descubre la “notación voigt” *.</p>
+        <p>*notación voigt: método que se basa en simetría para almacenar sólo los valores no repetidos y lograr una representación más simple.</p>
+      </li>
+        
+      <li id="1991">
+
+        <h1>1991</h1>
+        <p>Gregorio Ricci-Curbastro</p>
+        <br>
+        <p>Matemático que asentó las bases del cálculo tensorial con el libro "El cálculo diferencial absoluto", con su exalumno Tullio Levi-Civita.
+          </p>
+        <p>Esto sería la formación de las bases del cálculo tensorial, lo que hizo que Levi-Civita le enseñara a Einstein el cálculo tensorial, y le enseñara a calcular. </p>
+          <img2>
+    <img src="../images-folder/Ricci_Curbastro_(cropped).jpg" height="150" width="85">
+</img2>
+      </li>
+      <li id="Tensores">
+
+        <h1>Tensores</h1>
+        <p>Se dice que los tensores son objetos algebraicos multilineales porque cuando construyes el espacio al que pertenece este objeto estás cruzando espacios vectoriales (covariantes y contravariantes, véase definición..). Entonces un vector es un tensor de orden 1,0 ya que el vector pertenece al espacio vectorial V. Pero un tensor de orden (2,0-1,1-0,2) pertenece a un espacio vectorial VxV….
+        </p>
+        <p>
+        Bandera:
+        Por otra parte, es claro que la superficie en sí es independiente del sistema de coordenadas que elijamos. Por lo tanto la superficie bidimensional definida por la ecuación 1=xy+xz+z21=xy+xz+z2, coincide con la definición de tensor que estamos usando.
+  
+          </p>
+      </li>
+      <li id="Vectores">
+        <h1>Vectores</h1>
+        <p>La transformación de coordenadas de un vector de un espacio a otro se realiza mediante una transformación lineal. De esta manera, un vector es un tensor de orden uno porque requiere n números para definirlo.</p>
+        <p>La generalización consiste en pasar de lo particular a lo general y en ver lo general en lo particular.
+</p>
+      </li>
+    </ul>
+    <div id="grad_left"></div>
+    <div id="grad_right"></div>
+    <a href="#" id="next">+</a>
+    <a href="#" id="prev">-</a>
+  </div>
+
+</body>
